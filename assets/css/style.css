@@ -1,0 +1,492 @@
+/* ********************************************************************************************************************* */
+/* **************************************************main styles******************************************************** */
+/* ********************************************************************************************************************* */
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400;1,700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Koulen&family=Lobster&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400;1,700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Koulen&family=Lobster&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Serif+HK:wght@200;300;400;500;600;700;800&family=Tajawal:wght@200;300;700;800&display=swap');
+    *{
+        font-family: 'Cairo', sans-serif !important;
+        text-align: center;
+    }
+    #selectTheMode{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: inherit;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #selectTheMode img{
+        height: 40px;
+        filter: invert(5%) sepia(32%) saturate(4905%) hue-rotate(232deg) brightness(94%) contrast(93%);
+    }
+    body{
+        background-color: white;
+        color: black;
+        transition: all .75s;
+    }
+/* ********************************************************************************************************************* */
+/* **************************************************main styles******************************************************** */
+/* ********************************************************************************************************************* */
+
+/* ************************************** */
+/* ********* large and Xl screens********* */
+/* ************************************** */
+
+    /* ///// start styling intro page ///////// */
+        .intro{
+            width: 100%;
+            height: fit-content;
+            padding: 25px;
+            box-sizing: border-box;
+        
+        }
+        .intro .text{
+            margin-bottom: 30px;
+            width: 100%;
+            font-size: 18px;
+            font-style: oblique;
+        }
+
+       
+        h1{
+            font-weight: 800;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            font-style: oblique;
+        }
+        .intro .form label{
+            font-size: 25px;
+            font-weight: 500;
+            display: block;
+            text-align: left;
+            font-style: oblique;
+        }
+        .intro .form input{
+            width: 70%;
+            margin-bottom: 20px;
+            padding: 8px;
+            font-size: 18px;
+        }
+        .intro .form .choose {
+            width: 100%;
+            margin-bottom: 30px;
+            
+        }
+        .intro .form .choose .leveles{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center !important;
+            flex-wrap: wrap;
+        }
+        .intro .form .choose .leveles .thelevel{
+            width: 250px;
+            height: 250px;
+            overflow: hidden !important;
+            box-shadow: 2px 3px 10px 7px rgb(201, 201, 201);
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .intro .form .choose .leveles .thelevel:hover{
+            box-shadow: none !important;
+            border: 2px solid rgb(255, 79, 3);
+            color: rgb(255, 79, 3);
+            transition: all .5s;
+        }
+        .choosen{
+            box-shadow: none !important;
+            border: 2px solid rgb(255, 79, 3);
+            color: rgb(255, 79, 3);
+        }
+        .intro .form .choose .leveles .thelevel img{
+            height: 100px;
+            margin: 30px;
+        }
+        .intro .form button{
+            text-transform: capitalize;
+        }
+    /* ///// end styling intro page ///////// */
+
+    /* ///// start styling test page ///////// */
+        .test{
+            width: 100% !important;
+            margin: auto;
+            padding: 25px;
+            user-select: none;
+            box-sizing: border-box;
+            position: fixed;
+            left: -100%;
+            top:100%;
+            z-index: 10; 
+        }
+        .active{
+            height: 100vh !important;
+            position: fixed !important;
+            left: 0 !important;
+            top: 0px !important;
+            z-index: 10;
+            transition: all .75s;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .active .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .test .content{
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Noto Serif HK', serif !important;
+        }
+        .test .content .card{
+            height: fit-content;
+            width: fit-content;
+            border: none;
+            background-color: inherit;
+        }
+
+        .test .content .width{
+            width: 40%;
+        }
+        .test .content .width div{
+            box-shadow: none !important;
+            width: 100% !important;
+            height: 150px !important;
+            margin-top: 20px !important;
+        }
+        .test .content .width input{
+        width: 90%;
+        padding: 10px;
+        font-size: 25px; 
+        font-style: oblique;
+        }
+        .test .content .card div{
+            height: 200px;
+            width: 250px;
+            border-radius: 5px;
+            box-shadow: 2px 3px 10px 7px rgb(201, 201, 201) ;
+            margin-top: 40px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .test .content .card .left-card p{
+            font-size: 30px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .test .content .card .left-card span{
+            font-size: 20px;
+        }
+        .test .content .card h2{
+            font-size: 60px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        .test .content .card h4{
+            font-size: 35px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .test .content .card label{
+            font-size: 40px;
+            font-weight: 600;
+            color: black;
+        }
+    /* ///// end styling text page ///////// */
+
+    /* ///// start styling task result page page ///////// */
+        .game-over{
+            position: fixed !important;
+            right: 0 !important;
+            top: 0 !important;
+            z-index: 100;
+            transition: all .75s;
+        }
+        .result{
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.508);
+            position: fixed;
+            right: -100%;
+            top: -110%;
+        }
+        .result .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .result .container .result-info{
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 60%;
+            margin: auto;
+            height: 400px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .result .container .result-info .result-score{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+        }
+        .result .container .result-info .result-score h3{
+            font-size: 40px;
+        }
+        .result .container .result-info .result-score span{
+            font-size: 45px;
+            font-weight: 700;
+        }
+        .result input{
+            text-transform: capitalize !important;
+        }
+        .result .container .result-info .result-score label{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .result .container .result-info button{
+            width: 150px;
+            text-transform: capitalize;
+        }   
+    /* ///// end styling task result page page ///////// */
+    /* ////////////////start footer////////////////// */
+        footer{
+            font-size: 20px;
+            text-align: center;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            padding: 30px !important;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            padding-left: 20px;
+            position: relative;
+            left: 0;
+            z-index: 20;
+            bottom: 0;
+        }
+        footer p{
+            display: inline-block;
+            height: 60px;
+            width: fit-content;
+            padding-top: 30px;
+            font-size: 20px;
+            margin-right: 0px !important;
+        }
+        
+        footer a img{
+            display: inline-block;
+            margin-top: 20px;
+            height: 60px;
+        }
+    /* //////////////////end footer///////////////// */
+/* ************************************** */
+/* ********* large and Xl screens********* */
+/* ************************************** */
+
+/* ************************************** */
+/* ********* Medium screens ************* */
+/* ************************************** */
+
+@media (max-width:992px) {
+
+    body{
+        overflow-y: scroll !important;
+    }
+
+    .test .content {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .test .content .card{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+    } 
+    .test .content .width{
+        flex-direction: column !important;
+    }
+    .result .container .result-info {
+        width: 100%;
+    }
+}
+/* ************************************** */
+/* ********* Medium screens ************* */
+/* ************************************** */
+
+/* ************************************** */
+/* ********* Mobile phone screens ******* */
+/* ************************************** */
+
+@media (max-width:540px) {
+    
+    /* ///// start styling intro page ///////// */
+        .intro{
+            padding: 20px 0px 20px 0px!important;  
+        }
+        .intro h1{
+            margin-top: 30px;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .intro .form .thelevel{
+            width: 90%;
+            margin-top: 15px;
+        
+        }
+        .intro .form .choose .leveles{
+            flex-direction: column;
+            text-align: center !important;
+            margin: auto !important;
+        }
+        .test .content {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+    /* ///// end styling intro page ///////// */
+    
+    /* ///// start styling text page ///////// */
+        .test h1{
+            font-size: 25px !important;
+            padding-bottom: 20px !important;
+            margin-bottom: 0px !important;
+        }
+        .test .content .card{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        } 
+        .test .content .card div{
+            box-shadow: none !important;
+            border: 1px solid gray;
+            width: 150px;
+            margin: 0px !important;
+            padding: 5px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+        .test .content .card div p{
+            font-size: 18px !important;
+            margin-bottom: 5 !important;
+            line-height: 20px;
+            text-transform: capitalize;
+        }
+        .test .content .card div span{
+            font-size: 13px !important;
+            margin: 0px !important;
+        }
+        .test .content .card div h2, .test .content .card div h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+
+        }
+        .test .content .card div label{
+            font-size: 30px;
+        }
+        .test .content .width{
+            flex-direction: column !important;
+        }
+        .test .content .width div, .test .content .width div h2{
+            border: none !important;
+            height: fit-content !important;
+            font-size: 40px !important;
+            margin: 5px !important;
+        }
+    /* ///// end styling text page ///////// */
+
+    /* ///// start styling task result page page ///////// */ 
+        .result{
+            overflow: hidden;
+            margin-top: 0px!important;
+        }
+        .result .container .result-info {
+            height: 30%;
+            padding: 10px;
+        }
+        .result .container .result-info .result-score {
+            width: 100%;
+            margin: 10px 0px;
+        }
+        .result label{
+            font: 25px !important;
+            margin-bottom: 10px;
+        }
+    /* ///// end styling task result page page ///////// */
+}
+@media (max-width:350px) {
+    h1{
+        font-size: 25px !important;
+        margin-top: 25px;
+        margin-bottom: 20;
+    }
+}
+
+/* ************************************** */
+/* ********* Mobile phone screens ******* */
+/* ************************************** */
+
+/* ************************************** */
+/* ********* night mode******* */
+/* ************************************** */
+    .theNight{
+        background-color: #161633;
+        color: white;
+        transition: all .75s;
+    }
+    .chooseOnNight{
+        box-shadow: 2px 3px 10px 7px #1f1f39 !important;
+        transition: all .75s;
+    }
+    .night-mode{
+        box-shadow: 2px 3px 10px 7px #1f1f39 !important;
+        transition: all .75s;
+    }
+    .night-mode label{
+        color: white !important;
+    }
+    .darkResult{
+        background-color: #161633 !important;
+    }
+    .thenightbuton img{
+        filter: invert(79%) sepia(37%) saturate(7127%) hue-rotate(181deg) brightness(103%) contrast(101%) !important;
+    }
+    @media (max-width: 540px) {
+        .night-mode{
+            box-shadow: none !important;
+            border: 1px solid white !important;
+            transition: all .75s;
+        }
+    }
+/* ************************************** */
+/* ********* night mode******* */
+/* ************************************** */
